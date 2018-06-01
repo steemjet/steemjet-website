@@ -6,9 +6,9 @@ Steemjet is a global community aimed at productivity, creativity, encouraging gr
 <p>Here’s your first stop…<p>
 
 <b>STEEM HIGH</b>
-Steem high – learn how steem can fill you dreams.
+<br>Steem high – learn how steem can fill you dreams.
 
 <br>
 <b>OUR VISION</b>
-Imagine an ecosystem flooded with talented superstars living the steem dream. That’s what we hope to achieve. 
+<br>Imagine an ecosystem flooded with talented superstars living the steem dream. That’s what we hope to achieve. 
 Steemjet – On the wings of superstars, we are words and steem.
