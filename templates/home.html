@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="section section-header">
+    <div class="parallax filter filter-color-black">
+        <div class="image"
+            style="background-image: url({{ url_for('static', filename='assets/img/header-1.jpeg') }})">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="title-area">
+                    <img src="{{ url_for('static', filename='assets/img/Logo.png') }}" style="border-radius: 50%;" height="150px" width="150px">
+                    <h1 class="title-modern">Steem Jet</h1>
+                    <h2>On the wings of superstars, we are words and steem</h2>
+                    <div class="separator line-separator">♦</div>
+                </div>
+                <div class="button-get-started">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="title-area">
+                <h2>About Us</h2>
+                <div class="separator separator-danger">✻</div>
+                <p class="description">Steemjet is a global community hosted on the steem blockchain. It is a community
+                which comprises of talented superstars with a common goal and objective to promote steem in order to achieve global mass adoption of steem. Unlike any global community, we are aimed at marketing, promoting steem, paradigm shift, teaching crypto circumspection etc. Steemjet is a global community aimed at productivity, creativity, encouraging great talents, empowering great ideas, rewarding commitment etc.</p>
+                <p class="description">Steemjet is a community aimed at productivity, creativity, encouraging great talents, empowering great ideas, rewarding commitment etc. Steemjet is evolving everyday, growing bigger by the day, becoming more epic on the steem blockchain because of the hard works of all the delegates. New ideas are streaming in everyday into the steemjet community which is mostly adopted to help steemjet grow exponentially. - @empato365</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-small section-get-started">
+    <div class="parallax filter">
+        <div class="image"
+            style="background-image: url({{ url_for('static', filename='assets/img/header-2.jpeg') }})">
+        </div>
+        <div class="container">
+            <div class="title-area">
+                <h2 class="text-white">Join Our Discord Server!</h2>
+                <div class="separator line-separator">♦</div>
+                <p class="description"> Let's have a chat in our discord server!</p>
+            </div>
+
+            <div class="button-get-started">
+                <a href="https://discord.gg/4eKGXXY" class="btn btn-danger btn-fill btn-lg">Discord Server</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <div class="container" style="padding: 100px 100px;">
+      <!-- Page Heading -->
+      <h1 class="my-4">Trending
+        <small>Trending Posts Of SteemJet!</small>
+      </h1>
+      <!-- Project One -->
+      {% for post in activity %}
+      <div class="row">
+        <div class="col-md-7">
+            <p class="text-muted">By {{ post["author"] }}</p>
+          <a href="#">
+            {% if post["image"] %}
+              <img class="img-fluid rounded mb-3 mb-md-0" src="{{ post['image'] }}" width="600" height="400">
+            {% elif post["sec_image"] %}
+              <img class="img-fluid rounded mb-3 mb-md-0" src="{{ post['sec_image'] }}" width="600" height="400">
+            {% else %}
+              <img class="img-fluid rounded mb-3 mb-md-0" src="{{ url_for('static', filename='assets/img/Post.jpeg') }}" width="600" height="400">
+            {% endif %}
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h2>{{ post["title"] }}</h2>
+          <a class="btn btn-primary" href="/@{{ post['author'] }}/{{ post['permalink']}}">Read The Post</a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      {% endfor %}
+  </div>
+{% endblock %}
