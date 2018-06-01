@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Post Content Column -->
+        <div class="col-lg-7">
+          <!-- Title -->
+          <h1 class="mt-4">{{ post[0]["title"] }}</h1>
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#">{{ post[0]["author"] }}</a>
+          </p>
+          <hr>
+          <!-- Post Content -->
+          {% filter markdown %}{{ markdown(post[0]["body"]) }}{% endfilter %}
+        <hr>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-bottom: 100px;">Upvote</button>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Upvote The Post</h4>
+              </div>
+              <div class="modal-body">
+                <p></p>
+                <form method="post" action="{{ '/@' + post[0]['author'] + '/' + post[0]['permalink'] }}">
+                    {{ form.csrf_token }}
+                    {{ form.username.label }}
+                    <br>
+                    {{ form.username }}
+                    <br>
+                    {{ form.vote_weight.label }}
+                    <br>
+                    {{ form.vote_weight }}
+                    <input type="submit" value="Submit">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
