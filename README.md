@@ -12,7 +12,8 @@ Steemjet is a global community aimed at productivity, creativity, encouraging gr
 <b>OUR VISION</b>
 <br>Imagine an ecosystem flooded with talented superstars living the steem dream. That’s what we hope to achieve. 
 Steemjet – On the wings of superstars, we are words and steem.
-
+<br>
 <br>
 Official Website : http://steemjet.org/
+<br>
 Join Our Discord : https://discord.gg/4eKGXXY
